@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>annuaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+            <div>
+                <h1>Page d'annuaire!</h1>
+                <h2>Voici vos Contacts</h2>
+                {% for nom in contact_list %}
+                <h3>Contact : {{nom}}</h3>
+                {% endfor %}
+            </div>
+    </body>
+</html> 
